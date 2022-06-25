@@ -13,34 +13,46 @@ const state = {
       to: '/',
     },
     {
-      title: 'User Profile',
-      icon: 'mdi-account',
-      to: '/components/profile/',
+      title: 'Ingreso Vehiculo',
+      icon: 'mdi-car-back',
+      to: '/',
     },
     {
-      title: 'Regular Tables',
-      icon: 'mdi-clipboard-outline',
-      to: '/tables/regular/',
+      title: 'Reportes',
+      icon: 'mdi-chart-bar',
+      items: [
+        {
+          title: 'Vehiculos Activos',
+          icon: 'mdi-car-back',
+          to: '/configuracion/empresas',
+        },
+        {
+          title: 'Tiempo',
+          icon: 'mdi-clipboard-text-clock',
+          to: '/configuracion/roles',
+        },
+      ],
     },
     {
-      title: 'Typography',
-      icon: 'mdi-format-font',
-      to: '/components/typography/',
-    },
-    {
-      title: 'Icons',
-      icon: 'mdi-chart-bubble',
-      to: '/components/icons/',
-    },
-    {
-      title: 'Google Maps',
-      icon: 'mdi-map-marker',
-      to: '/maps/google/',
-    },
-    {
-      title: 'Notifications',
-      icon: 'mdi-bell',
-      to: '/components/notifications/',
+      title: 'Configuración',
+      icon: 'mdi-cog-outline',
+      items: [
+        {
+          title: 'Empresas',
+          icon: 'mdi-align-vertical-bottom',
+          to: '/configuracion/empresas',
+        },
+        {
+          title: 'Roles',
+          icon: 'mdi-key',
+          to: '/configuracion/roles',
+        },
+        {
+          title: 'Usuarios',
+          icon: 'mdi-account',
+          to: '/configuracion/usuarios',
+        },
+      ],
     },
   ],
 }
